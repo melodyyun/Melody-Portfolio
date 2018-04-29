@@ -131,9 +131,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto; }
+h1 {
+  font-family: 'Playfair Display', serif; }
 
-body {
-  background: pink; }
+p {
+  font-family: 'Montserrat', sans-serif; }
+
+html body {
+  background: #F7FDFF;
+  font-size: 16px;
+  font-size: 1.6rem; }
