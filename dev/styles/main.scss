@@ -1,10 +1,12 @@
 @import 'setup';
-
-.container {
-	max-width: 900px;
-	margin: 0 auto;
-}
-
-body{
-	background: pink;
-}
+@import 'utils';
+@import 'typography';
+@import 'general';
+@import 'components/nav';
+@import 'components/header';
+@import 'components/about';
+@import 'components/blog';
+@import 'components/contact';
+@import 'components/projects';
+@import 'components/socialMedia';
+@import 'components/footer';
