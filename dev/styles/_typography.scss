@@ -1,0 +1,18 @@
+h1{
+    @include font($title...);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.vertical{
+    @include vertical();
+}
+
+.nav{
+    @include font($menu...)
+}

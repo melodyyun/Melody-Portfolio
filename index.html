@@ -5,24 +5,82 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>My Project</title>
-	<!--Load Font Awesome-->
-	<script defer src='https://use.fontawesome.com/releases/v5.0.9/js/all.js' integrity='sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl' crossorigin='anonymous'></script>
 	<!--Load google fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
 	<link rel="stylesheet" href="public/styles/style.css">
 	
 </head>
 <body>
-	  <nav class="nav">
-		<ul class="nav__list">
-			<li></li>
-			<li><a href="#" class="nav__list__link">Home</a></li>
-		</ul>
-	</nav>
-	<!--Load jQuery-->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	 crossorigin="anonymous"></script>
-	 <!--Load scripts-->
+	<div class="wrapper">
+		<div class="grid-col-2">
+			<header>
+				<nav class="nav">
+					<section>
+						<div class="menu hamburger">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</section>
+					<div class="menu__text">
+						<h1 class="vertical">Menu</p>
+					</div>
+					<ul class="nav__list">
+							<li><a href="index.html" class="nav__list__link">Home</a></li>
+							<li><a href="projects.html" class="nav__list__link">Portfolio</a></li>
+							<li><a href="contact.html" class="nav__list__link">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<!--Melody's SVG Logo-->
+				<svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
+					<g id="XMLID_2_">
+						<g id="XMLID_8_">
+							<path id="XMLID_21_" d="M333.4,610c60.5-60.5,120.8-120.8,181.1-181.2c-2.2-2.1-4.3-4.1-6.6-6.3c-60.3,60.3-120.6,120.7-181,181.1
+							c-89.5-86.4-111.8-243.1-17.6-357.9c97.1-118.4,270.5-129.8,382.6-30.8C807.5,317,812.6,493,706.2,601.5
+							C600.8,709.1,434.5,705.4,333.4,610z M516.9,406.1c55.2-55.2,110-110,164.8-164.8c-91.9-91.7-244.6-88-331.6-2.5
+							C405.8,294.6,461.5,350.5,516.9,406.1z M354.6,595.1c55.6,47.2,119.3,67.2,191.6,58.2c50.2-6.2,93.9-27.3,131-61
+							c-53.6-53.6-106.9-106.9-159.9-159.9C463.4,486.3,409.2,540.5,354.6,595.1z M503.8,419.4C449.7,365.2,395.5,311,341.6,257.1
+							c0,107.7,0,216.1,0,324.7C395.9,527.4,450.1,473.2,503.8,419.4z M692.4,257.8C638.6,311.5,584.7,365.5,531.2,419
+							c53.6,53.6,107.5,107.5,161.2,161.2C692.4,472.9,692.4,365.1,692.4,257.8z M710.6,586.1c30-34.7,50-73.9,58.8-118.3
+							c10-50.6,6.3-100.2-12.7-148.4c-10.9-27.7-26.4-52.5-46.1-75.6C710.6,358.1,710.6,471.8,710.6,586.1z M323.4,268.2
+							c-67.6,85-65.1,211.6,0,292.6C323.4,463.2,323.4,365.9,323.4,268.2z M695.3,228c-30.9-29.8-67.1-50.8-108.5-62.5
+							c-48.9-13.7-97.9-13.4-146.6,1.2c-38.8,11.6-73,31.5-102.3,59.2c3.8,3.8,7.4,7.4,11.1,11.1c47.4-43.2,103.4-65.7,167.8-65.2
+							c64.4,0.5,120.1,24,166.8,68C687.5,235.8,691.3,232,695.3,228z M679.3,593.7c-46.2,41.5-100.4,63.5-162.5,64
+							c-62.2,0.5-116.8-20.6-163.4-61.1c-3.9,3.9-7.6,7.6-11.5,11.5c50.1,43.5,108.1,66.3,175.2,65.9c67-0.4,124.6-24,174.3-68.2
+							C687.3,601.7,683.4,597.8,679.3,593.7z M322.9,589.1c0.2-0.1,0.4-0.1,0.7-0.2c0-7.2,0.1-14.5-0.1-21.7c0-1.5-0.6-3.3-1.5-4.5
+							c-17.3-22.7-30.4-47.5-38.9-74.8c-7.8-24.6-11.6-49.9-11.3-75.7c0.1-9.4,0.8-18.9,2-28.3c1.9-15.1,5.3-29.8,10-44.3
+							c8.6-26.6,21.5-50.9,38.5-73c0.8-1.1,1.3-2.7,1.4-4c0.1-6.5,0.1-13,0.1-19.5c0-0.7-0.1-1.4-0.2-2.7
+							c-43.9,50.4-66.9,108-66.9,174.6C256.4,481.6,279.4,539.2,322.9,589.1z" />
+						</g>
+					</g>
+				</svg>
+			</section>
+			<aside class="socialMedia">
+				<div class="socialMedia__btnContainer">
+					<a href="https://github.com/melodyyun" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/melody-yun-c/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://twitter.com/melodyyunc?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+				</div>
+			</aside>
+			<section class="about">
+
+			</section>
+			<section class="projects">
+
+			</section>
+		</div>
+	</div>
+
+	<script defer src='https://use.fontawesome.com/releases/v5.0.9/js/all.js' integrity='sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl' crossorigin='anonymous'></script>
+	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js'></script> -->
+	<script src="public/scripts/library/smooth-scroll.polyfills.min.js"></script>
+	<script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script>
+	<script src="public/scripts/library/three.min.js"></script>
 	<script src="public/scripts/main.js"></script>
 </body>
 </html>

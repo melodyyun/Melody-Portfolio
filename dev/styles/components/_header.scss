@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//logo animation
+.logo{
+        fill: $black;
+        transition: all 0.3s ease;
+    }
+    .logo:hover{
+        fill: $black;
+        transform: scale(1.05);
+        animation: move 3s infinite;
+    }
+
+@keyframes move{
+    25%{
+        transform: translate(10px,5px ) rotateX(20deg) rotateY(10deg) rotate(50deg);
+    }
+    50%{
+        transform: translate(5px,-15px ) rotateX(30deg) rotateY(25deg) rotate(180deg);
+    }
+    70%{
+        transform: translate(8px, -2px ) rotateX(15deg) rotateY(30deg) rotate(250deg);
+    }
+    90%{
+        transform: translate(-2px, 0px ) rotateX(0deg) rotateY(5deg)rotate(360deg);
+    }
+}
