@@ -4,6 +4,7 @@ header{
 //logo animation
 .logo{
         fill: $black;
+        width: 100%;
         transition: all 0.3s ease;
         position: absolute;
         top: 50%;
@@ -30,3 +31,9 @@ header{
         transform: translate(-2px, 0px ) rotateX(0deg) rotateY(5deg)rotate(360deg);
     }
 }
+
+// @media (min-width:768px){
+//     .header{
+//         position: fixed;
+//     }
+// }
