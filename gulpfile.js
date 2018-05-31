@@ -27,11 +27,7 @@ gulp.task('scripts', () => {
 gulp.task('watch', function () {
     gulp.watch('./dev/scripts/*.js', ['scripts']);
     gulp.watch('./dev/styles/*.scss', ['styles']);
-<<<<<<< HEAD
-    gulp.watch('./dev/styles/components/**/*.scss', ['styles']);
-=======
     gulp.watch('./dev/styles/components/*.scss', ['styles']);
->>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
     gulp.watch('*.html', reload);
 });
 
