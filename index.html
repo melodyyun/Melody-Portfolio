@@ -15,7 +15,7 @@
 		<div class="grid-col-2">
 			<header>
 				<nav class="nav">
-					<section>
+					<div>
 						<div class="menu hamburger">
 							<span></span>
 							<span></span>
@@ -23,18 +23,18 @@
 							<span></span>
 							<span></span>
 						</div>
-					</section>
+					</div>
 					<div class="menu__text">
 						<h1 class="vertical">Menu</p>
 					</div>
 					<ul class="nav__list">
-							<li><a href="index.html" class="nav__list__link">Home</a></li>
-							<li><a href="projects.html" class="nav__list__link">Portfolio</a></li>
-							<li><a href="contact.html" class="nav__list__link">Contact</a></li>
+							<li><a id="about-btn" value="about" href="#about" class="nav__list__link">About</a></li>
+							<li><a id="projects-btn" value="projects" href="#projects" class="nav__list__link">Portfolio</a></li>
+							<li><a id="contact-btn" value="contact" href="#contact" class="nav__list__link">Contact</a></li>
 					</ul>
 				</nav>
 			</header>
-			<section>
+			<section id="logo-svg" class="main">
 				<!--Melody's SVG Logo-->
 				<svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
@@ -60,6 +60,20 @@
 					</g>
 				</svg>
 			</section>
+			<section id="about" class="hide main">
+				<h1>About Page</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nisi omnis, tenetur dignissimos ad quibusdam saepe nostrum. Iste alias cum ipsum praesentium id adipisci, quos cupiditate consequuntur. Excepturi aspernatur quasi quaerat? At itaque illo dolorem odio vel deserunt nostrum laboriosam?</p>
+				<img src="" alt="">
+				<div class="skills">
+
+				</div>
+			</section>
+			<section id="projects" class="hide main">
+				<h1>Projects page</h1>
+			</section>
+			<section id="contact" class="hide main">
+				<h1>Contacts page</h1>
+			</section>
 			<aside class="socialMedia">
 				<div class="socialMedia__btnContainer">
 					<a href="https://github.com/melodyyun" target="_blank"><i class="fab fa-github"></i></a>
@@ -67,12 +81,6 @@
 					<a href="https://twitter.com/melodyyunc?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
 				</div>
 			</aside>
-			<section class="about">
-
-			</section>
-			<section class="projects">
-
-			</section>
 		</div>
 	</div>
 

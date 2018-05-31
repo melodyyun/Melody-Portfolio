@@ -6,7 +6,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 
-
 gulp.task('styles', () => {
     return gulp.src('./dev/styles/**/*.scss')
         .pipe(sass().on('error', sass.logError))
@@ -28,7 +27,7 @@ gulp.task('scripts', () => {
 gulp.task('watch', function () {
     gulp.watch('./dev/scripts/*.js', ['scripts']);
     gulp.watch('./dev/styles/*.scss', ['styles']);
-    gulp.watch('./dev/styles/components/*.scss', ['styles']);
+    gulp.watch('./dev/styles/components/**/*.scss', ['styles']);
     gulp.watch('*.html', reload);
 });
 

@@ -29,6 +29,12 @@ $grid-col-4: 1fr 3fr 3fr 1fr;
     flex-wrap: wrap;
 }
 
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 //mixins grid layout
 @mixin grid ($column){
     display: grid;
