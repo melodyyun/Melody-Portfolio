@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .socialMedia{
     width: 100%;
     height: 100%;
@@ -8,6 +9,16 @@
         @include flex(column);
         @include flexCenter();
     }
+=======
+.social-media{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
     a{
         @include fontSizer(16);
         padding: 1rem;

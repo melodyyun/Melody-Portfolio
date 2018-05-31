@@ -13,7 +13,10 @@ $menu: 14, ('Playfair', serif), 400, 28px;
 
 //grid variables
 $grid-col-1: 1fr;
+<<<<<<< HEAD
 $grid-col-1: 1fr 1fr;
+=======
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
 $grid-col-3: 1fr 6fr 1fr;
 $grid-col-4: 1fr 3fr 3fr 1fr;
 
@@ -30,12 +33,15 @@ $grid-col-4: 1fr 3fr 3fr 1fr;
     flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 @mixin flexCenter(){
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+=======
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
 //mixins grid layout
 @mixin grid ($column){
     display: grid;

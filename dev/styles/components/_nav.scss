@@ -1,4 +1,5 @@
 .nav{
+<<<<<<< HEAD
     @include flexCenter();
     flex-direction: column;
     .nav__list{
@@ -6,6 +7,18 @@
         @include flex(row);
         @include flexCenter;
         display: none;
+=======
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .nav__list{
+        // display: none;
+        @include absolute();
+        @include flex(row);
+        justify-content: center;
+        align-items: center;
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
         padding-left: 0;
         width: 100vw;
         height: 100vh;
@@ -22,6 +35,7 @@
         }
         li::before{
             @include menuItemLine();
+<<<<<<< HEAD
             transition: all 0.3s ease;
         }
         li::after{
@@ -33,42 +47,74 @@
         }
         li:hover::after{
             transform: rotate(-45deg) translateX(8px) translateY(-11px);
+=======
+        }
+        li::after{
+            @include menuItemLine();
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
         }
     }
 
     .menu__text{
         text-align: center;
+<<<<<<< HEAD
         margin: 0.5rem 0;
         h1{
             margin: 0.5rem 0;
+=======
+        h1{
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
             text-align: center;
         }
     }
 
     //hamburger button
+<<<<<<< HEAD
     div {
     @include flexCenter();
     margin: 0 auto;
     width: 30px;
     }
 
+=======
+    section {
+    // flex: 1 1 50%;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 30px;
+    }
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
     .menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+<<<<<<< HEAD
     height: 25px;
+=======
+    height: 20px;
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
     width: 30px;
     position: relative;
     cursor: pointer;
         span {
             display: inline-block;
+<<<<<<< HEAD
+=======
+            // flex: 1 1 unset;
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
             width: 100%;
             height: 3px;
             background-color: $black;
             transition: all 0.5s ease;
         }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
     .hamburger {
         z-index: 2;
         span {
@@ -104,13 +150,19 @@
                 }
             }
         }
+<<<<<<< HEAD
 
         //apply after clicked
         &.hamburgeranimX {
+=======
+        //apply after clicked
+        &:hover {
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
             span {
             width: 0;
                 &:nth-of-type(1) {
                     width: 100%;
+<<<<<<< HEAD
                     animation: hamburgerTopAnimation 1s ease;
                     animation-fill-mode: forwards;
                     animation-delay: 0.05s;
@@ -124,6 +176,20 @@
             }
         } 
         //animations
+=======
+                    animation: hamburgeranimTop 1s ease;
+                    animation-fill-mode: forwards;
+                    animation-delay: 0.3s;
+                }
+                &:nth-of-type(5) {
+                    width: 100%;
+                    animation: hamburgeranimBottom 1s ease;
+                    animation-fill-mode: forwards;
+                    animation-delay: 0.3s;
+                }
+            }
+        }
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
         @keyframes hamburgerHover {
             0%{
                 width: 100%
@@ -132,8 +198,12 @@
                 width: 0%
             }
         }
+<<<<<<< HEAD
 
         @keyframes hamburgerTopAnimation {
+=======
+        @keyframes hamburgeranimTop {
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
             0% {
             display: none;
             }
@@ -145,12 +215,20 @@
             opacity: 0;
             }
             100% {
+<<<<<<< HEAD
             transform: rotate(45deg) translateX(3px) translateY(-3px);
             opacity: 1;
             }
         }
         
         @keyframes hamburgerBottomAnimation {
+=======
+            transform: rotate(45deg);
+            opacity: 1;
+            }
+        }
+        @keyframes hamburgeranimBottom {
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
             0% {
             display: none;
             }
@@ -162,7 +240,11 @@
             opacity: 0;
             }
             100% {
+<<<<<<< HEAD
             transform: rotate(-45deg) translateX(3px) translateY(2px);
+=======
+            transform: rotate(-45deg);
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
             opacity: 1;
             }
         }

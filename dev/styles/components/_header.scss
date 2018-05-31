@@ -1,10 +1,15 @@
 header{
+<<<<<<< HEAD
     @include flexCenter();
+=======
+    display: flex;
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
 }
 //logo animation
 .logo{
         fill: $black;
         transition: all 0.3s ease;
+<<<<<<< HEAD
         position: absolute;
         top: 50%;
         left: 50%;
@@ -15,6 +20,14 @@ header{
     //     transform: scale(1.05);
     //     animation: move 3s infinite;
     // }
+=======
+    }
+    .logo:hover{
+        fill: $black;
+        transform: scale(1.05);
+        animation: move 3s infinite;
+    }
+>>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
 
 @keyframes move{
     25%{
