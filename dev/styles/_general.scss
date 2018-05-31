@@ -4,16 +4,9 @@ html body{
 }
 
 .wrapper{
-<<<<<<< HEAD
-    width: 90%;
-=======
-    width: 70%;
->>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
+    width: 80%;
     margin: 0 auto;
-    @media (max-width: 900px) {
-        width: 80%;
-    }
-    @media (max-width: 768px) {
+    @media(max-width: 1200px){
         width: 90%;
     }
 }
@@ -32,7 +25,6 @@ a{
     color: $black;
     text-decoration: none;
 }
-<<<<<<< HEAD
 
 .hide{
     display: none;
@@ -43,5 +35,3 @@ a{
     padding: 3rem 0;
     position: relative;
 }
-=======
->>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36

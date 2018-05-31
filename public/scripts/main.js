@@ -2,7 +2,6 @@
 
 var app = {};
 
-<<<<<<< HEAD
 app.navList = $('.nav__list');
 
 //variables
@@ -59,18 +58,6 @@ app.handleNavPages = function () {
             app.navList.fadeOut();
             app.menu.removeClass('hamburgeranimX');
             app.toggleHamburger = false;
-=======
-app.toggleNav = function () {
-    var hamburger = $('.hamburger');
-    var navList = $('.nav__list');
-    hamburger.on('click', function () {
-        if (navList.is(':hidden')) {
-            hamburger.addClass('menuChange');
-            navList.fadeIn();
-        } else {
-            hamburger.removeClass('menuChange');
-            navList.fadeOut();
->>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
         }
     });
 };
@@ -84,7 +71,6 @@ app.threeScene = function () {
     document.body.appendChild(renderer.domElement);
 };
 
-<<<<<<< HEAD
 app.init = function () {
     $('.nav__list').css('display', 'none');
     app.toggleNav();
@@ -93,10 +79,5 @@ app.init = function () {
 //document.ready
 $(function () {
     app.init();
-=======
-//document.ready
-$(function () {
-    app.toggleNav();
->>>>>>> ebd0f49b611b5c5eecb2aa7a68858732d7bebd36
     // app.threeScene();
 });
