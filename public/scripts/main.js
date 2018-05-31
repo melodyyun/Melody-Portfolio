@@ -4,21 +4,21 @@ var app = {};
 
 app.navList = $('.nav__list');
 
+//variables
+app.menu = $('.menu');
+app.toggleHamburger = false;
+
 app.toggleNav = function () {
-    var menu = $('.menu');
-    var toggleHamburger = false;
-    menu.on('click', function () {
+    app.menu.on('click', function () {
         $('.nav__list').css('display', 'flex');
-        if (toggleHamburger) {
-            console.log('toggleHamburger is true');
-            menu.removeClass('hamburgeranimX');
+        if (app.toggleHamburger) {
+            app.menu.removeClass('hamburgeranimX');
             app.navList.fadeOut();
-            toggleHamburger = false;
+            app.toggleHamburger = false;
         } else {
-            console.log('toggleHamburger is false');
-            menu.addClass('hamburgeranimX');
+            app.menu.addClass('hamburgeranimX');
             app.navList.fadeIn();
-            toggleHamburger = true;
+            app.toggleHamburger = true;
             $('.hamburger').off('hover');
             $('.hamburger').unbind('mouseenter mouseleave');
         };
@@ -27,28 +27,37 @@ app.toggleNav = function () {
 
 app.handleNavPages = function () {
     //grabbing var for pages
-    var about = $('#about');
-    var projects = $('#projects');
-    var contact = $('#contact');
+    var About = $('#about');
+    var Projects = $('#projects');
+    var Contact = $('#contact');
     var logo = $('#logo-svg');
 
     app.navList.children().on('click', function () {
         var text = $(this).text();
         if (text === 'About') {
-            about.fadeIn();
-            projects.hide();
-            contact.hide();
+            About.fadeIn();
+            Projects.hide();
+            Contact.hide();
             logo.hide();
+            app.navList.fadeOut();
+            app.menu.removeClass('hamburgeranimX');
+            app.toggleHamburger = false;
         } else if (text === 'Contact') {
-            contact.fadeIn();
-            about.hide();
-            projects.hide();
+            Contact.fadeIn();
+            About.hide();
+            Projects.hide();
             logo.hide();
+            app.navList.fadeOut();
+            app.menu.removeClass('hamburgeranimX');
+            app.toggleHamburger = false;
         } else {
-            projects.fadeIn();
-            about.hide();
-            contact.hide();
+            Projects.fadeIn();
+            About.hide();
+            Contact.hide();
             logo.hide();
+            app.navList.fadeOut();
+            app.menu.removeClass('hamburgeranimX');
+            app.toggleHamburger = false;
         }
     });
 };

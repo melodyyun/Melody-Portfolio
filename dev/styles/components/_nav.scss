@@ -113,13 +113,13 @@
                     width: 100%;
                     animation: hamburgerTopAnimation 1s ease;
                     animation-fill-mode: forwards;
-                    animation-delay: 0.3s;
+                    animation-delay: 0.05s;
                 }
                 &:nth-of-type(5) {
                     width: 100%;
                     animation: hamburgerBottomAnimation 1s ease;
                     animation-fill-mode: forwards;
-                    animation-delay: 0.3s;
+                    animation-delay: 0.05s;
                 }
             }
         } 

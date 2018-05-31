@@ -343,16 +343,16 @@ a {
                 animation: hamburgerTopAnimation 1s ease;
         -webkit-animation-fill-mode: forwards;
                 animation-fill-mode: forwards;
-        -webkit-animation-delay: 0.3s;
-                animation-delay: 0.3s; }
+        -webkit-animation-delay: 0.05s;
+                animation-delay: 0.05s; }
       .nav .hamburger.hamburgeranimX span:nth-of-type(5) {
         width: 100%;
         -webkit-animation: hamburgerBottomAnimation 1s ease;
                 animation: hamburgerBottomAnimation 1s ease;
         -webkit-animation-fill-mode: forwards;
                 animation-fill-mode: forwards;
-        -webkit-animation-delay: 0.3s;
-                animation-delay: 0.3s; }
+        -webkit-animation-delay: 0.05s;
+                animation-delay: 0.05s; }
 
 @-webkit-keyframes hamburgerHover {
   0% {
