@@ -1,6 +1,18 @@
 .nav{
     @include flexCenter();
-    flex-direction: column;
+    .nav--relative{
+        position: relative;
+        flex-direction: column;
+    }
+    .nav--absolute{
+        position: fixed;
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+    }
     .nav__list{
         @include absolute();
         @include flex(row);

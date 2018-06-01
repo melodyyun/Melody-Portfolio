@@ -3,11 +3,6 @@ html body{
     font-size: 62.5%;
 }
 
-.grid-col-2{
-    @include grid($grid-col-2);
-    margin: 2rem;
-}
-
 //a tag
 a{
     color: $black;
@@ -17,4 +12,3 @@ a{
 .hide{
     display: none;
 }
-

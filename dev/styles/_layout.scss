@@ -13,8 +13,13 @@
     align-items: center;
 }
 
+.grid-col-3{
+    @include grid($grid-col-3);
+}
+
 .grid-col-2{
     @include grid($grid-col-2);
+    margin: 2rem;
 }
 
 .wrapper{
