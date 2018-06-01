@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>My Project</title>
 	<!--Load google fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
 	<!-- icons -->
 	<link rel=“stylesheet” href=“https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css“>
 	<link rel="stylesheet" href="public/styles/style.css">
@@ -29,13 +30,13 @@
 							<div class="menu__text">
 								<h1 class="vertical">Menu</p>
 							</div>
+							<ul class="nav__list">
+									<li><a id="about-btn" value="about" href="#about" class="nav__list__link">About</a></li>
+									<li><a id="projects-btn" value="projects" href="#projects" class="nav__list__link">Portfolio</a></li>
+									<li><a id="contact-btn" value="contact" href="#contact" class="nav__list__link">Contact</a></li>
+							</ul>
 						</div>
 					</section>
-					<ul class="nav__list">
-							<li><a id="about-btn" value="about" href="#about" class="nav__list__link">About</a></li>
-							<li><a id="projects-btn" value="projects" href="#projects" class="nav__list__link">Portfolio</a></li>
-							<li><a id="contact-btn" value="contact" href="#contact" class="nav__list__link">Contact</a></li>
-					</ul>
 				</nav>
 			</header>
 			<div class="pages">
@@ -78,32 +79,52 @@
 						<div class="single-col">
 							<figure>
 								<img src="./public/assets/studyBuddy.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
-								<figcaption>React Project - Study Buddy: create your own flashcard and improve your knowledge!</figcaption>
+								<figcaption>
+									<h2>React</h2>
+									<h3>Study Buddy</h3>
+									<p>Create and share your flashcard collection.</p>
+								</figcaption>
 							</figure>
-							<figure>
-								<img src="./public/assets/brain-art.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
-								<figcaption>Blog Post</figcaption>
-							</figure>
-							<figure>
-								<img src="./public/assets/brain-art.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
-								<figcaption>Blog Post</figcaption>
-							</figure>
+							<div class="flex-row blogs">
+								<figure class="margin-right">
+									<img src="./public/assets/brain-art.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
+									<figcaption>
+										<h3>Blog Post: Machine Learning</h3>
+									</figcaption>
+									<div class="overlay">
+										<p>Machine Learning in JavaScript using the Brain.js Library</p>
+										<a href="https://medium.com/@melody91/a-beginners-guide-to-machine-learning-with-javascript-5141cacb4bfa"></a>
+									</div>
+								</figure>
+								<figure>
+									<img src="./public/assets/brain-art.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
+									<figcaption>Blog Post</figcaption>
+								</figure>
+							</div>
 							<figure>
 								<img src="./public/assets/lisbon.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
-								<figcaption>React Project - Study Buddy: create your own flashcard and improve your knowledge!</figcaption>
+								<figcaption>
+									<h2>Lisbon</h2>
+									<p>PSD conversion using HTML CSS and JavaScript</p>
+								</figcaption>
 							</figure>
 						</div>
 						<div class="single-col">
 							<figure>
 								<img src="./public/assets/discoverRover.png" alt="JavaScript and JQuery Project -">
 								<figcaption>
-									<h2>JavaScript and JQuery Discover Rover</h2>
+									<h2>JavaScript & JQuery</h2>
+									<h3>Discover Rover</h3>
 									<p>Journey to Mars and see through the eyes of Nasa's Rovers.</p>
 								</figcaption>
 							</figure>
 							<figure>
 								<img src="./public/assets/comicCloud.png" alt="React Project - ">
-								<figcaption>React Project - Study Buddy: create your own flashcard and improve your knowledge!</figcaption>
+								<figcaption>
+									<h2>React, API, Firebase</h2>
+									<h3>Comic Cloud</h3>
+									<p>Search for your favourite comics and keep track of them</p>
+								</figcaption>
 							</figure>
 						</div>
 					</div>

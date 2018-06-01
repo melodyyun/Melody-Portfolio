@@ -8,7 +8,7 @@
     position: relative;
     overflow: hidden;
   }
-  figure:nth(1){
+  figure:nth-of-type(1){
     margin-top: 0;
   }
   figcaption{
@@ -19,12 +19,16 @@
     padding: 4rem 1rem 1rem 1rem;
     h2{
       font-size: 1.3rem;
-      @include font(14, 'Playfair', 400, 1.3rem);
+      @include font(14, 'Playfair Display', 400, 1.3rem);
     }
     p{
       font-size: 1rem;
       margin-bottom: 0px;
     }
+  }
+  .margin-right{
+    margin-top: 2rem;
+    margin-right: 2rem;
   }
 }
 
