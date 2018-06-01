@@ -181,7 +181,7 @@ a {
   width: 80%; }
 
 .pages {
-  width: 80%;
+  width: 100%;
   padding: 0 rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -568,3 +568,27 @@ header {
   width: 100%; }
   #projects img {
     width: 100%; }
+  #projects figure {
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden; }
+  #projects figure:nth(1) {
+    margin-top: 0; }
+  #projects figcaption {
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, transparent), color-stop(55%, #F7F7F7));
+    background: linear-gradient(transparent 10%, #F7F7F7 55%);
+    position: absolute;
+    bottom: 0;
+    padding: 4rem 1rem 1rem 1rem; }
+    #projects figcaption h2 {
+      font-size: 1.3rem;
+      font-size: 14px;
+      font-size: 1.4rem;
+      font-family: "Playfair";
+      font-weight: 400;
+      color: #3A3A3A;
+      line-height: 1.3rem; }
+    #projects figcaption p {
+      font-size: 1rem;
+      margin-bottom: 0px; }

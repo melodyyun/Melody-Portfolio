@@ -3,6 +3,29 @@
   img{
     width: 100%;
   }
+  figure{
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  figure:nth(1){
+    margin-top: 0;
+  }
+  figcaption{
+    width: 100%;
+    background: linear-gradient(transparent 10%, $beige 55%);
+    position: absolute;
+    bottom: 0;
+    padding: 4rem 1rem 1rem 1rem;
+    h2{
+      font-size: 1.3rem;
+      @include font(14, 'Playfair', 400, 1.3rem);
+    }
+    p{
+      font-size: 1rem;
+      margin-bottom: 0px;
+    }
+  }
 }
 
 // @media (min-width:768px){
