@@ -199,10 +199,12 @@ header{
             margin: 1rem;
         }
         .nav--absolute{
-            position: relative;
+            position: fixed;
             height: auto;
             flex-flow: row;
-            width: 100px;
+            top: 2.5%;
+            right: 5%;
+            width: 30px;
         }
         .menu__text{
             display: none;

@@ -11,10 +11,6 @@
   figure:nth-of-type(1){
     margin-top: 0;
   }
-  #blog1{
-    margin-top: 2rem;
-    margin-right: 2rem;
-  }
   figcaption{
     width: 100%;
     background: linear-gradient(transparent 10%, $beige 55%);
@@ -37,12 +33,5 @@
         position: fixed;
         width: 10%;
     }
-    #projects{
-      #blog1{
-      margin-right: 0rem;
-      }
-      #blog2{
-        display: none;
-      }
-    }
+    
 }

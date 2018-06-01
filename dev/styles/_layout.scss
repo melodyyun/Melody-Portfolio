@@ -1,5 +1,4 @@
 .main{
-    min-height: 100vh;
     padding: 3rem 0;
     position: relative;
     width: 80%;
@@ -28,6 +27,16 @@
     @media(max-width: 1200px){
         width: 90%;
     }
+    @media (max-width: 1000px){
+        width: 100%;
+    }
+    @media (max-width: 768px){
+        width: 90%;
+    }
+}
+
+.flex-center{
+    @include flexCenter();
 }
 
 @media (max-width:768px){

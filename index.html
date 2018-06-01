@@ -8,8 +8,9 @@
 	<!--Load google fonts-->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
-	<!-- icons -->
-	<link rel=“stylesheet” href=“https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css“>
+	<!--Devicon-->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 	<link rel="stylesheet" href="public/styles/style.css">
 	
 </head>
@@ -67,75 +68,107 @@
 					</svg>
 				</section>
 				<section id="about" class="hide main">
-					<h1>About Page</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nisi omnis, tenetur dignissimos ad quibusdam saepe nostrum. Iste alias cum ipsum praesentium id adipisci, quos cupiditate consequuntur. Excepturi aspernatur quasi quaerat? At itaque illo dolorem odio vel deserunt nostrum laboriosam?</p>
-					<img src="" alt="">
-					<div class="skills">
-	
+					<div class="flex-center">
+						<div>
+							<h1>Melody Yun Chen</h1>
+							<h2>Web Developer</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nisi omnis, tenetur dignissimos ad quibusdam saepe nostrum. Iste alias cum ipsum praesentium id adipisci, quos cupiditate consequuntur. Excepturi aspernatur quasi quaerat? At itaque illo dolorem odio vel deserunt nostrum laboriosam?</p>
+							<img src="" alt="">
+							<div class="skills">
+								<div class="skills__row">
+									<i class="devicon-react-original"></i>
+									<i class="devicon-javascript-plain"></i>
+									<i class="devicon-jquery-plain"></i>
+									<i class="devicon-sass-original"></i>
+									<i class="devicon-css3-plain"></i>
+									<i class="devicon-html5-plain"></i>
+								</div>			
+								<div class="skills__row">
+									<i class="devicon-bootstrap-plain"></i>
+									<i class="devicon-git-plain"></i>
+									<i class="devicon-github-plain"></i>
+									<i class="devicon-gulp-plain"></i>
+									<i class="devicon-visualstudio-plain"></i>
+									<i class="devicon-webpack-plain"></i>
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 				<section id="projects" class="hide main">
 					<div class="grid-col-2">
 						<div class="single-col">
 							<figure>
-								<img src="./public/assets/studyBuddy.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
-								<figcaption>
-									<h2>React</h2>
-									<h3>Study Buddy</h3>
-									<p>Create and share your flashcard collection.</p>
-								</figcaption>
-							</figure>
-							<div class="flex-row blogs">
-								<a href="https://medium.com/@melody91/a-beginners-guide-to-machine-learning-with-javascript-5141cacb4bfa" target="_blank">
-									<figure id="blog1">
-										<img src="./public/assets/brain-art.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
-										<figcaption>
-											<h3>
-												Blog Post: Machine Learning
-											</h3>
-										</figcaption>
-										<div class="overlay">
-											<p>Machine Learning in JavaScript using the Brain.js Library</p>
-										</div>
-									</figure>
-									<figure id="blog2">
-										<img src="./public/assets/brain-art.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
-										<figcaption>
-											<h3>Blog Post</h3>
-										</figcaption>
-									</figure>
+								<a href="https://card-hat.firebaseapp.com/" target="_blank">
+									<img src="./public/assets/studyBuddy.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
+									<figcaption>
+										<h2>React</h2>
+										<h3>Study Buddy</h3>
+										<p>Create and share your flashcard collection.</p>
+									</figcaption>
 								</a>
-							</div>
+							</figure>
 							<figure>
-								<img src="./public/assets/lisbon.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
-								<figcaption>
-									<h2>Lisbon</h2>
-									<p>PSD conversion using HTML CSS and JavaScript</p>
-								</figcaption>
+								<a href="https://medium.com/@melody91/a-beginners-guide-to-machine-learning-with-javascript-5141cacb4bfa" target="_blank">
+									<img src="./public/assets/brain-art.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
+									<figcaption>
+										<h2>Blog Post</h2>
+										<h3>
+											Machine Learning in JavaScript with Brain.js
+										</h3>
+									</figcaption>
+									<div class="overlay">
+										<p>Machine Learning in JavaScript using the Brain.js Library</p>
+									</div>
+								</a>
+							</figure>
+							<figure>
+								<a href="http://melodyyun.com/lisbon/" target="_blank">
+									<img src="./public/assets/lisbon.png" alt="React Project - Study Buddy: create your own flashcard and improve your knowledge!">
+									<figcaption>
+										<h2>Lisbon</h2>
+										<p>PSD conversion using HTML CSS and JavaScript</p>
+									</figcaption>
+								</a>
 							</figure>
 						</div>
 						<div class="single-col">
 							<figure>
-								<img src="./public/assets/discoverRover.png" alt="JavaScript and JQuery Project -">
-								<figcaption>
-									<h2>JavaScript & JQuery</h2>
-									<h3>Discover Rover</h3>
-									<p>Journey to Mars and see through the eyes of Nasa's Rovers.</p>
-								</figcaption>
+								<a href="http://melodyyun.com/discover-rover/" target="_blank">
+									<img src="./public/assets/discoverRover.png" alt="JavaScript and JQuery Project -">
+									<figcaption>
+										<h2>JavaScript & JQuery</h2>
+										<h3>Discover Rover</h3>
+										<p>Journey to Mars and see through the eyes of Nasa's Rovers.</p>
+									</figcaption>
+								</a>
 							</figure>
 							<figure>
-								<img src="./public/assets/comicCloud.png" alt="React Project - ">
-								<figcaption>
-									<h2>React, API, Firebase</h2>
-									<h3>Comic Cloud</h3>
-									<p>Search for your favourite comics and keep track of them</p>
-								</figcaption>
+								<a href="https://comicproject-b8126.firebaseapp.com/" target="_blank">
+									<img src="./public/assets/comicCloud.png" alt="React Project - ">
+									<figcaption>
+										<h2>React, API, Firebase</h2>
+										<h3>Comic Cloud</h3>
+										<p>Search for your favourite comics and keep track of them</p>
+									</figcaption>
+								</a>
 							</figure>
 						</div>
 					</div>
 				</section>
 				<section id="contact" class="hide main">
-					<h1>Contacts page</h1>
+					<div class="flex-center">
+						<h1>Let's chat!</h1>
+						<form action="http://www.focuspocus.io/magic/hello@melodyyun.com" method="POST" enctype="multipart/form-data">
+							<label for="fullNname">Name:</label>
+							<input type="text" name="Full Name" id="fullName">
+							<label for="fullNname">Email:</label>
+							<input type="text" name="emailAddress" id="emailAddress">
+							<label for="attachment">Message:</label>
+							<input type="text" name="message" id="message" />
+							<input type="submit" value="Send">
+						</form>
+					</div>
 				</section>
 			</div>
 			<aside class="socialMedia">

@@ -177,7 +177,6 @@ a {
   display: none; }
 
 .main {
-  min-height: 100vh;
   padding: 3rem 0;
   position: relative;
   width: 80%; }
@@ -214,6 +213,23 @@ a {
   @media (max-width: 1200px) {
     .wrapper {
       width: 90%; } }
+  @media (max-width: 1000px) {
+    .wrapper {
+      width: 100%; } }
+  @media (max-width: 768px) {
+    .wrapper {
+      width: 90%; } }
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 @media (max-width: 768px) {
   .grid-col-3 {
@@ -501,13 +517,15 @@ header {
             flex-direction: row;
     margin: 1rem; }
   .nav .nav--absolute {
-    position: relative;
+    position: fixed;
     height: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
-    width: 100px; }
+    top: 2.5%;
+    right: 5%;
+    width: 30px; }
   .nav .menu__text {
     display: none; } }
 
@@ -582,6 +600,9 @@ header {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
 
+#logo-svg {
+  min-height: 100vh; }
+
 .logo {
   fill: #3A3A3A;
   width: 100%;
@@ -622,6 +643,25 @@ header {
     -webkit-transform: translate(-2px, 0px) rotateX(0deg) rotateY(5deg) rotate(360deg);
             transform: translate(-2px, 0px) rotateX(0deg) rotateY(5deg) rotate(360deg); } }
 
+#about {
+  height: 100vh; }
+  #about .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    font-size: 2rem; }
+
 #projects {
   width: 100%; }
   #projects img {
@@ -632,9 +672,6 @@ header {
     overflow: hidden; }
   #projects figure:nth-of-type(1) {
     margin-top: 0; }
-  #projects #blog1 {
-    margin-top: 2rem;
-    margin-right: 2rem; }
   #projects figcaption {
     width: 100%;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, transparent), color-stop(55%, #F7F7F7));
@@ -657,8 +694,4 @@ header {
 @media (max-width: 858px) {
   .header {
     position: fixed;
-    width: 10%; }
-  #projects #blog1 {
-    margin-right: 0rem; }
-  #projects #blog2 {
-    display: none; } }
+    width: 10%; } }
