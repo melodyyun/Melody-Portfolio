@@ -368,15 +368,15 @@ a {
                 transition-delay: 0.2s;
         position: absolute;
         bottom: 0; }
-    .nav .hamburger:hover span:nth-child(2) {
-      -webkit-animation: hamburgerHover 1s infinite;
-              animation: hamburgerHover 1s infinite; }
-    .nav .hamburger:hover span:nth-child(3) {
-      -webkit-animation: hamburgerHover 1s 0.03s infinite;
-              animation: hamburgerHover 1s 0.03s infinite; }
-    .nav .hamburger:hover span:nth-child(4) {
-      -webkit-animation: hamburgerHover 1s 0.06s infinite;
-              animation: hamburgerHover 1s 0.06s infinite; }
+    .nav .hamburger:not(.hamburgeranimX):hover span:nth-child(2) {
+      -webkit-animation: hamburgerHover 1s 1;
+              animation: hamburgerHover 1s 1; }
+    .nav .hamburger:not(.hamburgeranimX):hover span:nth-child(3) {
+      -webkit-animation: hamburgerHover 1s 0.03s 1;
+              animation: hamburgerHover 1s 0.03s 1; }
+    .nav .hamburger:not(.hamburgeranimX):hover span:nth-child(4) {
+      -webkit-animation: hamburgerHover 1s 0.06s 1;
+              animation: hamburgerHover 1s 0.06s 1; }
     .nav .hamburger.hamburgeranimX span {
       width: 0; }
       .nav .hamburger.hamburgeranimX span:nth-of-type(1) {

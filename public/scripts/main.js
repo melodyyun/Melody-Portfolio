@@ -19,8 +19,6 @@ app.toggleNav = function () {
             app.menu.addClass('hamburgeranimX');
             app.navList.fadeIn();
             app.toggleHamburger = true;
-            $('.hamburger').off('hover');
-            $('.hamburger').unbind('mouseenter mouseleave');
         };
     });
 };
