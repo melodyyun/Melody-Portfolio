@@ -40,7 +40,7 @@ $grid-col-3: 1fr 6fr 1fr;
 @mixin grid ($column){
     display: grid;
     grid-template-columns: $column;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-auto-rows: minmax(10rem auto);
 }
 

@@ -1,0 +1,33 @@
+.main{
+    min-height: 100vh;
+    padding: 3rem 0;
+    position: relative;
+    width: 80%;
+}
+
+.pages{
+    width: 80%;
+    padding: 0 rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-col-2{
+    @include grid($grid-col-2);
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    @media(max-width: 1200px){
+        width: 90%;
+    }
+}
+
+@media (min-width:768px){
+    .flex-row{
+        display: flex;
+        justify-content: center;
+    }
+}

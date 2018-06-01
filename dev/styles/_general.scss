@@ -3,28 +3,9 @@ html body{
     font-size: 62.5%;
 }
 
-.wrapper{
-    width: 80%;
-    margin: 0 auto;
-    @include flexCenter();
-    @media(max-width: 1200px){
-        width: 90%;
-    }
-}
-
-//grid layout
-.grid-col-3{
-    @include grid($grid-col-3);
-    width: 100%;
-}
-
 .grid-col-2{
     @include grid($grid-col-2);
-}
-
-.flex-row{
-    @include flex(row);
-    @include flexCenter();
+    margin: 2rem;
 }
 
 //a tag
@@ -37,8 +18,3 @@ a{
     display: none;
 }
 
-.main{
-    min-height: 100vh;
-    padding: 3rem 0;
-    position: relative;
-}

@@ -2,10 +2,14 @@
 @import 'utils';
 @import 'typography';
 @import 'general';
-@import 'components/nav';
-@import 'components/header';
-@import 'components/about';
-@import 'components/contact';
-@import 'components/projects';
-@import 'components/socialMedia';
-@import 'components/footer';
+@import 'layout';
+//sidebars
+@import 'components/sideBars/nav';
+@import 'components/sideBars/header';
+@import 'components/sideBars/socialMedia';
+//pages
+@import 'components/pages/landing';
+@import 'components/pages/about';
+@import 'components/pages/contact';
+@import 'components/pages/projects';
+
