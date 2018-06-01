@@ -10,10 +10,16 @@ p{
     color: $black;
 }
 
-.vertical{
-    @include vertical();
-}
+// .vertical{
+//     @include vertical();
+// }
 
 .nav{
     @include font($menu...)
+}
+
+@media (min-width:768px){
+    .vertical{
+    @include vertical();
+    }
 }

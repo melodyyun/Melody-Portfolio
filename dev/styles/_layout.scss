@@ -30,9 +30,19 @@
     }
 }
 
-@media (min-width:768px){
-    .flex-row{
-        display: flex;
-        justify-content: center;
+@media (max-width:768px){
+    .grid-col-3{
+         @include grid($grid-col-1);
+    }
+    .grid-col-2{
+    @include grid($grid-col-2);
+    margin: 0;
+    }
+    .socialMedia{
+        display: block;
+        position: relative;
+    }
+    .main{
+        padding: 0;
     }
 }

@@ -1,3 +1,7 @@
+header{
+    @include flexCenter();
+}
+
 .nav{
     z-index: 2;
     @include flexCenter();
@@ -179,6 +183,29 @@
             transform: rotate(-45deg) translateX(3px) translateY(2px);
             opacity: 1;
             }
+        }
+    }
+}
+
+@media (max-width:768px){
+    header{
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .nav{
+        .nav--relative{
+            position: relative;
+            flex-direction: row;
+            margin: 1rem;
+        }
+        .nav--absolute{
+            position: relative;
+            height: auto;
+            flex-flow: row;
+            width: 100px;
+        }
+        .menu__text{
+            display: none;
         }
     }
 }

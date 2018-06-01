@@ -19,3 +19,15 @@
         transform: scale(1.2);
     }
 }
+
+
+@media (max-width:768px){
+    .socialMedia{
+        @include flex(row);
+        .socialMedia__btnContainer{
+            position: relative;
+            height: auto;
+            @include flex(row);
+        }
+    }
+}

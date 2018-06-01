@@ -150,12 +150,6 @@ p {
   font-family: 'Open Sans', sans-serif;
   color: #3A3A3A; }
 
-.vertical {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  text-orientation: upright; }
-
 .nav {
   font-size: 14px;
   font-size: 1.4rem;
@@ -163,6 +157,13 @@ p {
   font-weight: 400;
   color: #3A3A3A;
   line-height: 28px; }
+
+@media (min-width: 768px) {
+  .vertical {
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    text-orientation: upright; } }
 
 html body {
   background: #F7FDFF;
@@ -214,14 +215,34 @@ a {
     .wrapper {
       width: 90%; } }
 
-@media (min-width: 768px) {
-  .flex-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
+@media (max-width: 768px) {
+  .grid-col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(10rem auto); }
+  .grid-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(10rem auto);
+    margin: 0; }
+  .socialMedia {
+    display: block;
+    position: relative; }
+  .main {
+    padding: 0; } }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .nav {
   z-index: 2;
@@ -464,21 +485,31 @@ a {
             transform: rotate(-45deg) translateX(3px) translateY(2px);
     opacity: 1; } }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-@media (min-width: 768px) {
-  .header {
-    position: fixed;
-    width: 10%; } }
+@media (max-width: 768px) {
+  header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .nav .nav--relative {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem; }
+  .nav .nav--absolute {
+    position: relative;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    width: 100px; }
+  .nav .menu__text {
+    display: none; } }
 
 .socialMedia {
   display: -webkit-box;
@@ -526,6 +557,30 @@ header {
   .socialMedia a:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
+
+@media (max-width: 768px) {
+  .socialMedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .socialMedia .socialMedia__btnContainer {
+      position: relative;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
 
 .logo {
   fill: #3A3A3A;
@@ -577,6 +632,9 @@ header {
     overflow: hidden; }
   #projects figure:nth-of-type(1) {
     margin-top: 0; }
+  #projects #blog1 {
+    margin-top: 2rem;
+    margin-right: 2rem; }
   #projects figcaption {
     width: 100%;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, transparent), color-stop(55%, #F7F7F7));
@@ -595,6 +653,12 @@ header {
     #projects figcaption p {
       font-size: 1rem;
       margin-bottom: 0px; }
-  #projects .margin-right {
-    margin-top: 2rem;
-    margin-right: 2rem; }
+
+@media (max-width: 858px) {
+  .header {
+    position: fixed;
+    width: 10%; }
+  #projects #blog1 {
+    margin-right: 0rem; }
+  #projects #blog2 {
+    display: none; } }
