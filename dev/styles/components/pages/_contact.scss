@@ -1,0 +1,30 @@
+#contact{
+  height: 100vh;
+  form{
+    label{
+      @include font($aboutText...);
+    }
+    input{
+      @include font($aboutText...);
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.5rem 1rem;
+    }
+    textarea{
+      @include font($aboutText...);
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.5rem 1rem;
+    }
+    .msg{
+      grid-column: 1/3;
+    }
+  }
+  .contact__container{
+    width: 100%;
+  }
+  .name-email{
+    display: flex;
+    flex-flow: row;
+  }
+}

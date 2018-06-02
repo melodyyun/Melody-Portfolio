@@ -8,12 +8,28 @@ h1{
 p{
     font-family: 'Open Sans', sans-serif;
     color: $black;
+    font-size: 1rem;
 }
 
-// .vertical{
-//     @include vertical();
-// }
+.page-title{
+    @include font($pageTitle...);
+}
 
+.page-subtitle{
+    @include font($pageSubtitle...);
+}
+
+//about
+.about-text{
+    margin: 0;
+    @include font($aboutText...);
+}
+
+.skills-text{
+    @include font($skillsText...);
+}
+
+//nav
 .nav{
     @include font($menu...)
 }

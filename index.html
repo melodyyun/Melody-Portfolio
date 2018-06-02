@@ -16,11 +16,17 @@
 </head>
 <body>
 	<div class="wrapper">
+
 		<div class="grid-col-3">
+
 			<header>
+
 				<nav class="nav">
+
 					<section class="nav--relative">
+
 						<div class="nav--absolute">
+
 							<div class="menu hamburger">
 								<span></span>
 								<span></span>
@@ -28,19 +34,27 @@
 								<span></span>
 								<span></span>
 							</div>
+
 							<div class="menu__text">
 								<h1 class="vertical">Menu</p>
 							</div>
+
 							<ul class="nav__list">
 									<li><a id="about-btn" value="about" href="#" class="nav__list__link">About</a></li>
 									<li><a id="projects-btn" value="projects" href="#" class="nav__list__link">Portfolio</a></li>
 									<li><a id="contact-btn" value="contact" href="#" class="nav__list__link">Contact</a></li>
 							</ul>
+
 						</div>
+
 					</section>
 				</nav>
+				<!-- nav end -->
 			</header>
+			<!-- header end -->
+
 			<div class="pages">
+
 				<section id="logo-svg" class="main">
 					<!--Melody's SVG Logo-->
 					<svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -67,34 +81,84 @@
 						</g>
 					</svg>
 				</section>
+				<!-- end of landing page -->
+
 				<section id="about" class="hide main">
 					<div class="flex-center">
 						<div>
-							<h1>Melody Yun Chen</h1>
-							<h2>Web Developer</h2>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nisi omnis, tenetur dignissimos ad quibusdam saepe nostrum. Iste alias cum ipsum praesentium id adipisci, quos cupiditate consequuntur. Excepturi aspernatur quasi quaerat? At itaque illo dolorem odio vel deserunt nostrum laboriosam?</p>
-							<img src="" alt="">
+
+							<h1 class="page-title">Melody Yun Chen</h1>
+							<h2 class="page-subtitle">Web Developer</h2>
+
+							<div class="grid-col-2">
+								<p class="about-text">Hi! I'm Melody, here to make the online world a better place one website at a time. I love learning and sharing knowledge and I'm always building something new. Feel free to message me and we can geek out about code! </p>
+								<img src="./public/assets/melodyImg.jpg" alt="Photo of Melody Yun Chen sitting in the red HackerYou Chair">
+							</div>
+							<!-- end of about me image and text -->
+
+							<h2 class="skills-header"> I come prep-equipped with:</h2>
 							<div class="skills">
 								<div class="skills__row">
-									<i class="devicon-react-original"></i>
-									<i class="devicon-javascript-plain"></i>
-									<i class="devicon-jquery-plain"></i>
-									<i class="devicon-sass-original"></i>
-									<i class="devicon-css3-plain"></i>
-									<i class="devicon-html5-plain"></i>
+									<div>
+										<i class="devicon-react-original"></i>
+										<p class="skills-text">React</p>
+									</div>
+									<div>
+										<i class="devicon-javascript-plain"></i>
+										<p class="skills-text">JavaScript</p>
+									</div>
+									<div>
+										<i class="devicon-jquery-plain"></i>
+										<p class="skills-text">jQuery</p>
+									</div>
+									<div>
+										<i class="devicon-sass-original"></i>
+										<p class="skills-text">Sass</p>
+									</div>
+									<div>
+										<i class="devicon-css3-plain"></i>
+										<p class="skills-text">css</p>
+									</div>
+									<div>
+										<i class="devicon-html5-plain"></i>
+										<p class="skills-text">HTML5</p>
+									</div>
 								</div>			
 								<div class="skills__row">
-									<i class="devicon-bootstrap-plain"></i>
-									<i class="devicon-git-plain"></i>
-									<i class="devicon-github-plain"></i>
-									<i class="devicon-gulp-plain"></i>
-									<i class="devicon-visualstudio-plain"></i>
-									<i class="devicon-webpack-plain"></i>
+									<div>
+										<i class="devicon-bootstrap-plain"></i>
+										<p class="skills-text">Bootstrap</p>
+									</div>
+									<div>
+										<i class="devicon-git-plain"></i>
+										<p class="skills-text">Git</p>
+									</div>
+									<div>
+										<i class="devicon-github-plain"></i>
+										<p class="skills-text">Github</p>
+									</div>
+									<div>
+										<i class="devicon-gulp-plain"></i>
+										<p class="skills-text">Gulp</p>
+									</div>
+									<div>
+										<i class="devicon-visualstudio-plain"></i>
+										<p class="skills-text">jQuery</p>
+									</div>
+									<div>
+										<i class="devicon-webpack-plain"></i>
+										<p class="skills-text">Webpack</p>
+									</div>
 								</div>
+								<!-- end of skills icon -->
 							</div>
+							<!-- end of skills -->
+
 						</div>
 					</div>
 				</section>
+				<!-- end of about page -->
+
 				<section id="projects" class="hide main">
 					<div class="grid-col-2">
 						<div class="single-col">
@@ -156,21 +220,44 @@
 						</div>
 					</div>
 				</section>
+				<!-- end of portfolio -->
+
 				<section id="contact" class="hide main">
 					<div class="flex-center">
-						<h1>Let's chat!</h1>
-						<form action="http://www.focuspocus.io/magic/hello@melodyyun.com" method="POST" enctype="multipart/form-data">
-							<label for="fullNname">Name:</label>
-							<input type="text" name="Full Name" id="fullName">
-							<label for="fullNname">Email:</label>
-							<input type="text" name="emailAddress" id="emailAddress">
-							<label for="attachment">Message:</label>
-							<input type="text" name="message" id="message" />
-							<input type="submit" value="Send">
-						</form>
+						<div class="contact__container">
+							<h1 class="page-title">Let's Chat!</h1>
+							<h2 class="page-subtitle">email: hello@melodyyun.com</h2>
+
+							<form class="grid-col-2" action="http://www.focuspocus.io/magic/hello@melodyyun.com" method="POST" enctype="multipart/form-data">
+
+								<div>
+									<label for="fullNname">Name: </label>
+									<input type="text" name="Full Name" id="fullName" placeholder="Full Name" required>
+								</div>
+
+								<div>
+									<label for="emailAddress">Email: </label>
+									<input type="email" name="emailAddress" id="emailAddress" placeholder="hello@email.com" required>
+								</div>
+
+								<div class="msg">
+									<label for="attachment">Message: </label>
+									<textarea type="text" name="message" id="message" placeholder="Hey friend!" cols="40" rows="8"></textarea>
+								</div>
+
+								<input type="submit" value="Send">
+
+							</form>
+							<!-- end of form -->
+
+						</div>
 					</div>
 				</section>
+				<!-- end of contact -->
+
 			</div>
+			<!-- pages end -->
+
 			<aside class="socialMedia">
 				<div class="socialMedia__btnContainer">
 					<a href="https://github.com/melodyyun" target="_blank"><i class="fab fa-github"></i></a>
@@ -178,9 +265,11 @@
 					<a href="https://twitter.com/melodyyunc?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
 				</div>
 			</aside>
-		</div>
-	</div>
 
+		</div>
+		<!-- grid end -->
+	</div>
+	<!-- wrapper end -->
 	<script defer src='https://use.fontawesome.com/releases/v5.0.9/js/all.js' integrity='sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl' crossorigin='anonymous'></script>
 	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js'></script> -->
 	<script src="public/scripts/library/smooth-scroll.polyfills.min.js"></script>

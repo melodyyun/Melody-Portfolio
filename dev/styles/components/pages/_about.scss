@@ -1,11 +1,29 @@
 #about{
   height: 100vh;
+  .about-text{
+    padding: 1rem;
+    border: 2px solid $beige;
+  }
   .skills{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
+    flex-flow: column wrap;
     width: 100%;
     font-size: 2rem;
+    padding: 1rem;
+    background: $beige;
+    margin-top: 1rem;
+    &__row{
+      @include flexCenter();
+      flex-flow: row;
+      div{
+        width: 100px;
+        @include flexCenter();
+        flex-flow: column wrap;
+        padding: 0.5rem;
+      }
+    }
+  }
+  img{
+    width: 100%;
   }
 }
