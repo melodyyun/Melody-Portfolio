@@ -31,7 +31,29 @@
         .socialMedia__btnContainer{
             position: relative;
             height: auto;
+            margin: 2rem;
             @include flex(row);
+        }
+    }
+}
+
+@media (max-width:700px){
+    .socialMedia{
+        img{
+            background: $white;
+            opacity: 0.6;
+            border-radius: 50%;
+            padding: 0.3rem;
+        }
+    }
+}
+
+@media (max-width:500px){
+    .socialMedia{
+        .socialMedia__btnContainer{
+            position: absolute;
+            bottom: 0;
+            margin: 0 auto;
         }
     }
 }

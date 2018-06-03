@@ -6,7 +6,7 @@
 
 .pages{
     width: 100%;
-    padding: 0 rem;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,15 +42,11 @@
 
 @media (max-width:900px){
     .grid-col-3{
-         @include grid($grid-col-1);
+        @include grid($grid-col-1);
     }
     .grid-col-2{
-    @include grid($grid-col-2);
-    margin: 2rem 0;
-    }
-    .socialMedia{
-        display: block;
-        position: relative;
+        @include grid($grid-col-2);
+        margin: 2rem 0;
     }
     #about{
         height: 80vh;
@@ -70,6 +66,12 @@
 
 @media (max-width:640px){
     .grid-col-2{
-    @include grid($grid-col-1);
+        @include grid($grid-col-1);
+    }
+}
+
+@media (max-width:700px){
+    .flex-center{
+        height: auto;
     }
 }

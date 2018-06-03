@@ -211,3 +211,13 @@ header{
         }
     }
 }
+
+@media (max-width:430px){
+  .nav{
+    .nav__list{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+}
