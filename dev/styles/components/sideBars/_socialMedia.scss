@@ -18,10 +18,14 @@
     a:hover{
         transform: scale(1.2);
     }
+    img{
+        height: 2rem;
+        width: 2rem;
+    }
 }
 
 
-@media (max-width:768px){
+@media (max-width:900px){
     .socialMedia{
         @include flex(row);
         .socialMedia__btnContainer{

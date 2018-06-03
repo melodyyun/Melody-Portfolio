@@ -32,7 +32,7 @@ header{
         z-index: 4;
         margin: 0;
         a{
-            padding: 0.3rem 0.3rem;
+            padding: 1rem 0.3rem;
             margin: 1rem;
         }
         li{
@@ -41,11 +41,11 @@ header{
         }
         li::before{
             @include menuItemLine();
-            transition: all 0.3s ease;
+            transition: all 0.5s ease;
         }
         li::after{
             @include menuItemLine();
-            transition: all 0.3s ease;
+            transition: all 0.5s ease;
         }
         li:hover::before{
             transform: rotate(45deg) translateX(8px) translateY(11px);
@@ -187,7 +187,7 @@ header{
     }
 }
 
-@media (max-width:768px){
+@media (max-width:900px){
     header{
         justify-content: start;
         align-items: flex-start;

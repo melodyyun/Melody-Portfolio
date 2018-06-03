@@ -3,6 +3,9 @@
   .about-text{
     padding: 1rem;
     border: 2px solid $beige;
+    outline: 5px double  $beige;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12) inset;
+    background: $beige;
   }
   .skills{
     @include flexCenter();
@@ -12,6 +15,14 @@
     padding: 1rem;
     background: $beige;
     margin-top: 1rem;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12) inset;
+    outline: 5px double  $beige;
+    img{
+      width: 2rem;
+      height: 2rem;
+      box-shadow: none;
+      outline: none;
+    }
     &__row{
       @include flexCenter();
       flex-flow: row;
@@ -25,5 +36,7 @@
   }
   img{
     width: 100%;
+    outline: 5px double $beige;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12) inset;
   }
 }

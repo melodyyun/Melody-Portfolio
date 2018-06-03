@@ -2,7 +2,6 @@
 @import 'utils';
 @import 'typography';
 @import 'general';
-@import 'layout';
 //sidebars
 @import 'components/sideBars/nav';
 @import 'components/sideBars/socialMedia';
@@ -11,4 +10,6 @@
 @import 'components/pages/about';
 @import 'components/pages/contact';
 @import 'components/pages/projects';
+//layout
+@import 'layout';
 
