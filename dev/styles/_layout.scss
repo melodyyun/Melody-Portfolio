@@ -28,7 +28,7 @@
         width: 90%;
     }
     @media (max-width: 1000px){
-        width: 100%;
+        width: 90%;
     }
     @media (max-width: 768px){
         width: 90%;
@@ -65,5 +65,11 @@
     // }
     .main{
         padding: 0;
+    }
+}
+
+@media (max-width:640px){
+    .grid-col-2{
+    @include grid($grid-col-1);
     }
 }

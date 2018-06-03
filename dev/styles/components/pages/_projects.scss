@@ -32,7 +32,7 @@
     background: linear-gradient(transparent 10%, $beige 55%);
     position: absolute;
     bottom: 0;
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 4rem 11% 11% 11%;
   }
   h2{
     font-size: 1.3rem;
@@ -52,6 +52,7 @@
     margin: 0;
     overflow: hidden;
     position: absolute;
+    // transform-origin: center center;
     transition: all 0.3s linear;
   }
   figure:hover .overlay{
@@ -69,6 +70,7 @@
     left: 5%;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
     padding: 1rem;
+    // transform-origin: center center;
     &__links{
       display: flex;
       flex-flow: row wrap;
@@ -114,10 +116,14 @@
   }
 }
 
-// @media (max-width:900px){
-//     .header{
-//         position: fixed;
-//         width: 10%;
-//     }
-    
-// }
+@media (max-width:640px){
+    #projects{
+    //   figcaption{
+    //   width: 100%;
+    //   background: linear-gradient(transparent 10%, $beige 55%);
+    //   position: absolute;
+    //   bottom: 0;
+    //   padding: 10%;
+    // }
+  }
+}

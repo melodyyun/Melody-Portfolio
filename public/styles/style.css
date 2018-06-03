@@ -773,7 +773,7 @@ header {
     background: linear-gradient(transparent 10%, #F7F7F7 55%);
     position: absolute;
     bottom: 0;
-    padding: 4rem 1rem 1rem 1rem; }
+    padding: 4rem 11% 11% 11%; }
   #projects h2 {
     font-size: 1.3rem;
     font-size: 14px;
@@ -923,7 +923,7 @@ header {
       width: 90%; } }
   @media (max-width: 1000px) {
     .wrapper {
-      width: 100%; } }
+      width: 90%; } }
   @media (max-width: 768px) {
     .wrapper {
       width: 90%; } }
@@ -961,3 +961,10 @@ header {
     height: 80vh; }
   .main {
     padding: 0; } }
+
+@media (max-width: 640px) {
+  .grid-col-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(10rem auto); } }
