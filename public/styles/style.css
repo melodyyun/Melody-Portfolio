@@ -157,7 +157,7 @@ p {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #3A3A3A;
-  line-height: 100%; }
+  line-height: 120%; }
 
 .page-subtitle {
   font-size: 18px;
@@ -165,7 +165,7 @@ p {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #3A3A3A;
-  line-height: 100%; }
+  line-height: 120%; }
 
 .about-text {
   margin: 0;
@@ -548,7 +548,8 @@ header {
     transition: all 0.3s ease; }
   .socialMedia a:hover {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
+            transform: scale(1.2);
+    color: #c1a4a4; }
   .socialMedia img {
     height: 2rem;
     width: 2rem; }
@@ -581,17 +582,53 @@ header {
 #logo-svg {
   min-height: 100vh; }
 
-.logo {
-  fill: #3A3A3A;
-  width: 100%;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 1; }
+#logo-svg .y {
+  -webkit-animation: changeLogoColor 3s 3s 1;
+          animation: changeLogoColor 3s 3s 1;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear; }
+
+#logo-svg .m {
+  -webkit-animation: changeLogoColor 3s 0s 1;
+          animation: changeLogoColor 3s 0s 1;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear; }
+
+#logo-svg .overlap {
+  -webkit-animation: changeLogoColor 3s 0s 2;
+          animation: changeLogoColor 3s 0s 2;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear; }
+
+#logo-svg .c {
+  -webkit-animation: changeLogoColor 3s 6s 1;
+          animation: changeLogoColor 3s 6s 1;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear; }
+
+@-webkit-keyframes changeLogoColor {
+  0% {
+    fill: #3A3A3A; }
+  50% {
+    fill: #c1a4a4; } }
+
+@keyframes changeLogoColor {
+  0% {
+    fill: #3A3A3A; }
+  50% {
+    fill: #c1a4a4; } }
+
+@-webkit-keyframes changeLogoColorM {
+  0% {
+    fill: #3A3A3A; }
+  50% {
+    fill: #c1a4a4; } }
+
+@keyframes changeLogoColorM {
+  0% {
+    fill: #3A3A3A; }
+  50% {
+    fill: #c1a4a4; } }
 
 @-webkit-keyframes move {
   25% {
@@ -737,6 +774,12 @@ header {
 
 #contact {
   margin-top: 2rem; }
+  #contact .mailto {
+    padding: 0.5rem 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  #contact .mailto:hover, #contact .mailto:active, #contact .mailto:focus {
+    color: #c1a4a4; }
   #contact .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

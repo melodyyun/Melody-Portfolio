@@ -1,6 +1,13 @@
 #contact{
   //height: 100vh;
   margin-top: 2rem;
+  .mailto{
+    padding: 0.5rem 0;
+    transition: all 1s ease;
+  }
+  .mailto:hover, .mailto:active, .mailto:focus{
+    color: $mailPink;
+  }
   .form-grid{
       @include grid($grid-col-2);
     }

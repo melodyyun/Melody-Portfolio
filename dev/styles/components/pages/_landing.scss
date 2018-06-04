@@ -1,21 +1,62 @@
 #logo-svg{
     min-height: 100vh;
 }
-.logo{
-        fill: $black;
-        width: 100%;
-        transition: all 0.3s ease;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-    }
-    // .logo:hover{
-    //     fill: $black;
-    //     transform: scale(1.05);
-    //     animation: move 3s infinite;
+// .logo{
+//     fill: $black;
+//     width: 100%;
+//     transition: all 0.3s ease;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 1;
+// }
+#logo-svg{
+    
+    // .logoColorChange{
+    //     animation: changeLogoColor 3s 3s 1;
+    //     transition: all 1s linear;
     // }
+
+    .y{
+        animation: changeLogoColor 3s 3s 1;
+        transition: all 1s linear;
+    }
+
+    .m{
+        animation: changeLogoColor 3s 0s 1;
+        transition: all 1s linear;
+    }
+    
+    .overlap{
+        animation: changeLogoColor 3s 0s 2;
+        transition: all 1s linear;
+    }
+
+    .c{
+        animation: changeLogoColor 3s 6s 1;
+        transition: all 1s linear;
+    }
+}
+
+@keyframes changeLogoColor{
+    0%{
+        fill: $black;
+    }
+    50%{
+        fill: $mailPink;
+    }
+}
+
+@keyframes changeLogoColorM{
+    0%{
+        fill: $black;
+    }
+    50%{
+        fill: $mailPink;
+    }
+}
+
 
 @keyframes move{
     25%{
@@ -31,7 +72,6 @@
         transform: translate(-2px, 0px ) rotateX(0deg) rotateY(5deg)rotate(360deg);
     }
 }
-
 
 @media (max-width:900px){
     #logo-svg{
