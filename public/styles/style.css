@@ -898,14 +898,29 @@ header {
     margin-bottom: 0px; }
   #projects .overlay {
     opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
     position: absolute;
+    background: #F7FDFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    height: 90%;
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear; }
   #projects figure:hover .overlay {
