@@ -37,23 +37,23 @@
     }
 }
 
-@media (max-width:700px){
-    .socialMedia{
-        img{
-            background: $white;
-            opacity: 0.6;
-            border-radius: 50%;
-            padding: 0.3rem;
-        }
-    }
-}
+// @media (max-width:700px){
+//     .socialMedia{
+//         img{
+//             background: $white;
+//             opacity: 0.6;
+//             border-radius: 50%;
+//             padding: 0.3rem;
+//         }
+//     }
+// }
 
-@media (max-width:500px){
-    .socialMedia{
-        .socialMedia__btnContainer{
-            position: absolute;
-            bottom: 0;
-            margin: 0 auto;
-        }
-    }
-}
+// @media (max-width:500px){
+//     .socialMedia{
+//         .socialMedia__btnContainer{
+//             position: absolute;
+//             bottom: 0;
+//             margin: 0 auto;
+//         }
+//     }
+// }

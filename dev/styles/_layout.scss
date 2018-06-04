@@ -42,23 +42,12 @@
 
 @media (max-width:900px){
     .grid-col-3{
-        @include grid($grid-col-1);
+        display: block;
     }
     .grid-col-2{
         @include grid($grid-col-2);
         margin: 2rem 0;
     }
-    #about{
-        height: 80vh;
-    }
-    #contact{
-        height: 80vh;
-    }
-    // .flex-center{
-    //     height: 80vh;
-    //     display: inline-block;
-    //     padding: 1rem;
-    // }
     .main{
         padding: 0;
     }

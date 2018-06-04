@@ -31,3 +31,10 @@
         transform: translate(-2px, 0px ) rotateX(0deg) rotateY(5deg)rotate(360deg);
     }
 }
+
+
+@media (max-width:900px){
+    #logo-svg{
+    min-height: 70vh;
+    }
+}

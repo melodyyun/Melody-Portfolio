@@ -1,5 +1,6 @@
 #about{
   height: 100vh;
+  width: 100%;
   .about-text{
     padding: 1rem;
     border: 2px solid $beige;
@@ -51,7 +52,7 @@
     
     .skills{
       @include flexCenter();
-      width: 82%;
+      width: 65%;
       font-size: 1rem;
       background: $beige;
       margin: 1em auto;
@@ -62,6 +63,23 @@
       &__row{
         flex-flow: row wrap;
       }
+    }
+  }
+}
+
+@media (max-width:570px){
+  #about{
+    .skills{
+      width: 82%;
+    }
+  }
+}
+
+
+@media (max-width:465px){
+  #about{
+    .skills{
+      width: 100%;
     }
   }
 }
