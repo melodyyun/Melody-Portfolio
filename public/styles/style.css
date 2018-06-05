@@ -895,8 +895,7 @@ header {
     transition: all 1s linear; }
   #projects figcaption {
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, transparent), color-stop(55%, #F7F7F7));
-    background: linear-gradient(transparent 10%, #F7F7F7 55%);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.001) 10%, #F7F7F7 55%);
     position: absolute;
     bottom: 0;
     padding: 4rem 11% 11% 11%; }
