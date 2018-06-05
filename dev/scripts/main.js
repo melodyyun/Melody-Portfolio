@@ -28,6 +28,7 @@ app.handleNavPages = () => {
     const Contact = $('#contact');
     const logo = $('#logo-svg');
     
+
     app.navList.children().on('click', function(){
         const text = $(this).text();
         if(text === 'About'){
@@ -56,13 +57,44 @@ app.handleNavPages = () => {
             app.toggleHamburger = false;
         }
     })
+}
 
+app.handleUserJourney = () => {
+    const step1 = $('.linkAbout');
+    const step2 = $('.linkProjects');
+    const step3 = $('.linkContact')
+    const About = $('#about');
+    const Projects = $('#projects');
+    const Contact = $('#contact');
+    const logo = $('#logo-svg');
+
+    step1.on('click', function(){
+        About.fadeIn();
+        Projects.hide();
+        Contact.hide();
+        logo.hide();
+    })
+
+    step2.on('click', function () {
+        About.hide();
+        Projects.fadeIn();
+        Contact.hide();
+        logo.hide();
+    })
+
+    step3.on('click', function () {
+        About.hide();
+        Projects.hide();
+        Contact.fadeIn();
+        logo.hide();
+    })
 }
 
 app.init = () => {
     $('.nav__list').css('display', 'none');
     app.toggleNav();
     app.handleNavPages();
+    app.handleUserJourney();
 }
 //document.ready
 $(function(){

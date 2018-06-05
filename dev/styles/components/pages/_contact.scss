@@ -6,7 +6,7 @@
     transition: all 1s ease;
   }
   .mailto:hover, .mailto:active, .mailto:focus{
-    color: $mailPink;
+    color: $pink;
   }
   .form-grid{
       @include grid($grid-col-2);

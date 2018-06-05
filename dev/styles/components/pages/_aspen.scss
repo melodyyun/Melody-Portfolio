@@ -1,0 +1,12 @@
+.aspen{
+  width: auto;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    outline: 5px double  rgba(0, 0, 0, 0.22) ;
+    background: $beige;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.22) inset;
+  }
+}

@@ -60,10 +60,42 @@ app.handleNavPages = function () {
     });
 };
 
+app.handleUserJourney = function () {
+    var step1 = $('.linkAbout');
+    var step2 = $('.linkProjects');
+    var step3 = $('.linkContact');
+    var About = $('#about');
+    var Projects = $('#projects');
+    var Contact = $('#contact');
+    var logo = $('#logo-svg');
+
+    step1.on('click', function () {
+        About.fadeIn();
+        Projects.hide();
+        Contact.hide();
+        logo.hide();
+    });
+
+    step2.on('click', function () {
+        About.hide();
+        Projects.fadeIn();
+        Contact.hide();
+        logo.hide();
+    });
+
+    step3.on('click', function () {
+        About.hide();
+        Projects.hide();
+        Contact.fadeIn();
+        logo.hide();
+    });
+};
+
 app.init = function () {
     $('.nav__list').css('display', 'none');
     app.toggleNav();
     app.handleNavPages();
+    app.handleUserJourney();
 };
 //document.ready
 $(function () {

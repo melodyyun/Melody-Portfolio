@@ -1,26 +1,28 @@
 #logo-svg{
     min-height: 100vh;
-}
-#logo-svg{
     .y{
-        animation: changeLogoColor 3s 3s 1;
+        animation: changeLogoColor 4s 4.5s 1;
         transition: all 1s linear;
     }
 
     .m{
-        animation: changeLogoColor 3s 0s 1;
+        animation: changeLogoColor 5s 1s 1;
         transition: all 1s linear;
     }
     
     .overlap{
-        animation: changeLogoColor 3s 0s 2;
+        animation: changeLogoColor 4s 0.5s 2;
         transition: all 1s linear;
     }
 
     .c{
-        animation: changeLogoColor 3s 6s 1;
+        animation: changeLogoColor 5s 7s 1;
         transition: all 1s linear;
     }
+}
+.svgATag{
+    display: block;
+    cursor: pointer;
 }
 
 @keyframes changeLogoColor{
@@ -28,16 +30,7 @@
         fill: $black;
     }
     50%{
-        fill: $mailPink;
-    }
-}
-
-@keyframes changeLogoColorM{
-    0%{
-        fill: $black;
-    }
-    50%{
-        fill: $mailPink;
+        fill: $pink;
     }
 }
 

@@ -1,0 +1,42 @@
+.thankYou{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  div{
+    background: $beige;
+    max-width: 300px;
+    margin: 0.5rem 0;
+    padding: 2rem 2rem;
+    box-shadow: 0 1px 5px $boxSBlack;
+    outline: 5px double  $boxSBlack;
+    display: flex;
+    flex-flow: column;
+
+    h1{
+      @include fontSizer(25);
+      text-align: center;
+    }
+
+    h2{
+      @include font($aboutText...);
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+
+    a{
+      @include fontSizer(15);
+      margin: 0 auto;
+      box-shadow: 0 1px 5px $boxSBlack;
+      outline: 5px double  $boxSBlack;
+      padding: 0.5rem;
+      transition: all 1s ease;
+    }
+    a:hover{
+      color: $pink;
+    }
+  }
+}
