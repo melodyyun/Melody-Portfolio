@@ -1,5 +1,6 @@
 header{
     @include flexCenter();
+    transition: all 1s ease;
 }
 
 .nav{

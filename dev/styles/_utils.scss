@@ -44,6 +44,7 @@ $grid-col-3: 1fr 6fr 1fr;
 
 //mixins grid layout
 @mixin grid ($column){
+    display: -ms-grid; 
     display: grid;
     grid-template-columns: $column;
     grid-gap: 2rem;
