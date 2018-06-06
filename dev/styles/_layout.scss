@@ -1,5 +1,5 @@
 .main{
-    padding: 3rem 0;
+    padding: 2rem 0;
     position: relative;
     width: 80%;
     transition: all 1s ease;
@@ -15,10 +15,12 @@
 
 .grid-col-3{
     @include grid($grid-col-3);
+    transition: all 1s ease;
 }
 
 .grid-col-2{
     @include grid($grid-col-2);
+    transition: all 1s ease;
     margin: 2rem 0;
 }
 

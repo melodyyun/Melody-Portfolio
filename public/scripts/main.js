@@ -91,8 +91,13 @@ app.handleUserJourney = function () {
     });
 };
 
+// app.nameChange = () => {
+//     $('.name').html()
+// }
+
 app.init = function () {
     $('.nav__list').css('display', 'none');
+    // app.nameChange();
     app.toggleNav();
     app.handleNavPages();
     app.handleUserJourney();
