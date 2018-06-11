@@ -90,10 +90,6 @@ app.handleUserJourney = () => {
     })
 }
 
-// app.nameChange = () => {
-//     $('.name').html()
-// }
-
 app.init = () => {
     $('.nav__list').css('display', 'none');
     // app.nameChange();
@@ -104,5 +100,4 @@ app.init = () => {
 //document.ready
 $(function(){
     app.init();
-    // app.threeScene();
 });
