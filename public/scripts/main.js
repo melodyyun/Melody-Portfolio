@@ -30,32 +30,25 @@ app.handleNavPages = function () {
     var Contact = $('#contact');
     var logo = $('#logo-svg');
 
+    app.changePage = function (page) {
+        About.hide();
+        Projects.hide();
+        Contact.hide();
+        logo.hide();
+        page.fadeIn();
+        app.navList.fadeOut();
+        app.menu.removeClass('hamburgeranimX');
+        app.toggleHamburger = false;
+    };
+
     app.navList.children().on('click', function () {
         var text = $(this).text();
         if (text === 'About') {
-            About.fadeIn();
-            Projects.hide();
-            Contact.hide();
-            logo.hide();
-            app.navList.fadeOut();
-            app.menu.removeClass('hamburgeranimX');
-            app.toggleHamburger = false;
+            app.changePage(About);
         } else if (text === 'Contact') {
-            Contact.fadeIn();
-            About.hide();
-            Projects.hide();
-            logo.hide();
-            app.navList.fadeOut();
-            app.menu.removeClass('hamburgeranimX');
-            app.toggleHamburger = false;
+            app.changePage(Contact);
         } else {
-            Projects.fadeIn();
-            About.hide();
-            Contact.hide();
-            logo.hide();
-            app.navList.fadeOut();
-            app.menu.removeClass('hamburgeranimX');
-            app.toggleHamburger = false;
+            app.changePage(Projects);
         }
     });
 };
@@ -91,10 +84,6 @@ app.handleUserJourney = function () {
     });
 };
 
-// app.nameChange = () => {
-//     $('.name').html()
-// }
-
 app.init = function () {
     $('.nav__list').css('display', 'none');
     // app.nameChange();
@@ -105,5 +94,4 @@ app.init = function () {
 //document.ready
 $(function () {
     app.init();
-    // app.threeScene();
 });
