@@ -11,18 +11,6 @@
         text-transform: uppercase;
         transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
-    // h1::after{
-    //     content: 'Melody Yun';
-    //     display: inline-block;
-    //     letter-spacing: 4px;
-    //     text-align: center;
-    //     margin: 0 auto;
-    //     text-transform: uppercase;
-        //transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-        // animation: nameChange 3s infinite;
-        // animation: opacity 6s infinite;
-        // animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    //}
 
     @keyframes nameChange{
         0%{content: 'Melody Yun'}
