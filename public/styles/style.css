@@ -1002,6 +1002,8 @@ header {
     padding: 1rem;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear; }
+    #projects .overlay p {
+      padding: 1rem 0; }
   #projects figure:hover .overlay {
     opacity: 1;
     position: absolute;

@@ -59,6 +59,9 @@
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
     padding: 1rem;
     transition: all 0.3s linear;
+    p{
+      padding: 1rem 0;
+    }
   }
   figure:hover .overlay{
     opacity: 1;
