@@ -1,9 +1,7 @@
 #about{
-  //height: 100vh;
-  width: 60%;
+  width: 100%;
   transition: all 1s ease;
-  position: fixed;
-  height: 100vh;
+  position: relative;
   top: 0;
   .about-text{
     padding: 1rem;
@@ -67,6 +65,18 @@
   0%{color: $black;}
   50%{color: $pink;}
 }
+
+// @media (max-height:780px){
+//   #about{
+//     width: 100%;
+//     position: relative;
+//     height: auto;
+//     display: block;
+//     .flex-center{
+//       height: auto;
+//     }
+//   }
+// }
 
 @media (max-width:900px){
   #about{

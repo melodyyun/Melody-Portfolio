@@ -713,11 +713,10 @@ header {
     max-height: 70vh; } }
 
 #about {
-  width: 60%;
+  width: 100%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  position: fixed;
-  height: 100vh;
+  position: relative;
   top: 0; }
   #about .about-text {
     padding: 1rem;
@@ -862,8 +861,6 @@ header {
   width: 100%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  position: fixed;
-  height: 100vh;
   top: 0; }
   #contact .mailto {
     padding: 0.5rem 0;

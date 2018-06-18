@@ -1,11 +1,12 @@
 #contact{
-  //height: 100vh;
   width: 100%;
   transition: all 1s ease;
-  position: fixed;
-  height: 100vh;
+  //position: fixed;
+  //@errormin-height: 100vh;
   top: 0;
-  //margin-top: 2rem;
+  // .flex-center{
+  //   min-height: 100vh;
+  // }
   .mailto{
     padding: 0.5rem 0;
     transition: all 1s ease;
@@ -65,6 +66,18 @@
     flex-flow: row;
   }
 }
+
+// @media (max-height:750px){
+//   #contact{
+//     width: 100%;
+//     position: relative;
+//     height: auto;
+//     display: block;
+//     .flex-center{
+//       height: auto;
+//     }
+//   }
+// }
 
 @media (max-width:900px){
   #contact{
