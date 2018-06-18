@@ -1,7 +1,10 @@
 #about{
   //height: 100vh;
-  width: 100%;
+  width: 60%;
   transition: all 1s ease;
+  position: fixed;
+  height: 100vh;
+  top: 0;
   .about-text{
     padding: 1rem;
     border: 2px solid $beige;
@@ -65,10 +68,17 @@
   50%{color: $pink;}
 }
 
+@media (max-width:900px){
+  #about{
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: block;
+  }
+}
+
 @media (max-width:700px){
   #about{
-  
-    height: auto;
     .grid-col-2{
       display: block;
     }
