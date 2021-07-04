@@ -1,0 +1,40 @@
+.socialMedia{
+    @include flex(column);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 1s ease;
+    .socialMedia__btnContainer{
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        @include flex(column);
+        @include flexCenter();
+    }
+    a{
+        @include fontSizer(16);
+        padding: 1rem;
+        transition: all 0.3s ease;
+    }
+    a:hover{
+        transform: scale(1.2);
+        //color: $pink;
+    }
+    img{
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+
+@media (max-width:900px){
+    .socialMedia{
+        @include flex(row);
+        .socialMedia__btnContainer{
+            position: relative;
+            height: auto;
+            margin: 2rem;
+            @include flex(row);
+        }
+    }
+}

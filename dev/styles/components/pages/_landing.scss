@@ -1,0 +1,110 @@
+#logo-svg{
+    //min-height: 100vh;
+    transition: all 1s ease;
+    h1{
+        //display: none;
+        font-size: 2.5rem;
+        display: inline-block;
+        letter-spacing: 4px;
+        text-align: center;
+        margin: 0 auto;
+        text-transform: uppercase;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    @keyframes nameChange{
+        0%{content: 'Melody Yun'}
+        50%{content: 'a Web Developer'}
+    }
+
+    @keyframes opacity{
+        0%{opacity: 0}
+        5%{opacity: 1;}
+        50%{opacity: 0;}
+        55%{opacity: 1;}
+        95%{opacity: 0;}
+    }
+
+    .y{
+        animation: changeLogoColor 4s 4.5s 1;
+        transition: all 1s linear;
+    }
+
+    .m{
+        animation: changeLogoColor 5s 1s 1;
+        transition: all 1s linear;
+    }
+    
+    .overlap{
+        animation: changeLogoColor 4s 0.5s 2;
+        transition: all 1s linear;
+    }
+
+    .c{
+        animation: changeLogoColor 6s 7s 1;
+        transition: all 1s linear;
+    }
+}
+.svgATag{
+    display: block;
+    cursor: pointer;
+}
+
+@keyframes changeLogoColor{
+    0%{
+        fill: $black;
+    }
+    50%{
+        fill: $pink;
+    }
+}
+
+
+@keyframes move{
+    25%{
+        transform: translate(10px,5px ) rotateX(20deg) rotateY(10deg) rotate(50deg);
+    }
+    50%{
+        transform: translate(5px,-15px ) rotateX(30deg) rotateY(25deg) rotate(180deg);
+    }
+    70%{
+        transform: translate(8px, -2px ) rotateX(15deg) rotateY(30deg) rotate(250deg);
+    }
+    90%{
+        transform: translate(-2px, 0px ) rotateX(0deg) rotateY(5deg)rotate(360deg);
+    }
+}
+
+@media (max-width:1150px){
+    #Layer_1{
+    padding-top: 3rem;
+    }
+}
+
+@media (max-width:900px){
+    #logo-svg{
+        max-height: 80vh;
+    }
+    #Layer_1{
+        padding-top: 0rem;
+        max-height: 70vh;
+    }
+}
+
+@media (max-width:700px){
+    #Layer_1{
+        max-height: 70vh;
+    }
+    // .svgATag{
+    // display: block;
+    // cursor: pointer;
+    //     div{
+    //         display: flex;
+    //         margin: 0 auto;
+    //     }
+    //     #Layer_1{
+    //         height: 50vh;
+    //     }
+    // }
+}
+

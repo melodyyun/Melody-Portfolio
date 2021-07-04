@@ -3,19 +3,25 @@ $background: #F7FDFF;
 $backgroundTransparent: rgba(247, 253, 255, 0.85);
 $white: #FFF;
 $beige: #F7F7F7;
+$pink: rgb(193, 164, 164);
 $black: #3A3A3A;
+$boxSBlack: rgba(0, 0, 0, 0.15);
 
 //font variables
-$title: 16, ('Playfair', serif), 400, 70%;
-//font-family: 'Playfair Display', serif;
-$projTitle: 12, ('Playfair', serif), 700, 28px;
-$menu: 14, ('Playfair', serif), 400, 28px;
+$pageTitle: 26, ('Playfair Display', serif), 400, 120%;
+$projectName: 22, ('Playfair Display', serif), 400, 100%;
+$pageSubtitle: 18, ('Playfair Display', serif), 400, 120%;
+$aboutText: 10, ('Open Sans', sans-serif), 400, 150%;
+$skillsText: 8, ('Open Sans', sans-serif), 400, 130%;
+$linkText: 8, ('Open Sans', sans-serif), 400, 0%;
+$title: 16, ('Playfair Display', serif), 400, 100%;
+$projTitle: 12, ('Playfair Display', serif), 700, 28px;
+$menu: 14, ('Playfair Display', serif), 400, 28px;
 
 //grid variables
 $grid-col-1: 1fr;
-$grid-col-1: 1fr 1fr;
+$grid-col-2: 1fr 1fr;
 $grid-col-3: 1fr 6fr 1fr;
-$grid-col-4: 1fr 3fr 3fr 1fr;
 
 //position
 @mixin absolute (){
@@ -38,9 +44,10 @@ $grid-col-4: 1fr 3fr 3fr 1fr;
 
 //mixins grid layout
 @mixin grid ($column){
+    display: -ms-grid; 
     display: grid;
     grid-template-columns: $column;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-auto-rows: minmax(10rem auto);
 }
 
@@ -49,6 +56,7 @@ $grid-col-4: 1fr 3fr 3fr 1fr;
     writing-mode: vertical-rl;
     text-orientation: upright;
 }
+
 @mixin menuItemLine{
     content: '';
             display: block;
@@ -73,17 +81,3 @@ $grid-col-4: 1fr 3fr 3fr 1fr;
     color: $black;
     line-height: $height;
 }
-
-
-
-// @mixin small() {
-//     @media only screen and (max-width: 320px) {
-//         @content;
-//     }
-// }
-
-// @mixin box($width, $height, $background) {
-//     width: $width;
-//     height: $height;
-//     background-color: $background;
-// }

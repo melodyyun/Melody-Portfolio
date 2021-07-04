@@ -1,26 +1,7 @@
 html body{
     background: $background;
     font-size: 62.5%;
-}
-
-.wrapper{
-    width: 90%;
-    margin: 0 auto;
-    @media (max-width: 900px) {
-        width: 80%;
-    }
-    @media (max-width: 768px) {
-        width: 90%;
-    }
-}
-
-//grid layout
-.grid-col-2{
-    @include grid($grid-col-3);
-}
-
-.grid-col-3{
-    @include grid($grid-col-4);
+    min-height: 100vh;
 }
 
 //a tag
@@ -31,10 +12,4 @@ a{
 
 .hide{
     display: none;
-}
-
-.main{
-    min-height: 100vh;
-    padding: 3rem 0;
-    position: relative;
 }

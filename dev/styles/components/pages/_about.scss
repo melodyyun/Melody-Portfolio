@@ -1,0 +1,128 @@
+#about{
+  width: 100%;
+  transition: all 1s ease;
+  position: relative;
+  top: 0;
+  .about-text{
+    padding: 1rem;
+    border: 2px solid $beige;
+    outline: 5px double  $beige;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12) inset;
+    background: $beige;
+  }
+  .grid-col-2{
+    margin: 1rem 0;
+  }
+  .linkProjects{
+    display: inline-block;
+  }
+  #linkProjects{
+    transition: all 3s linear;
+    animation: flashPink 6s 0s infinite;
+    cursor: pointer;
+    margin: 0;
+  }
+  .aspen{
+    font-weight: 700;
+    display: inline;
+    cursor: url(../assets/aspen.png), auto;
+  }
+  .skills{
+    @include flexCenter();
+    flex-flow: column wrap;
+    width: 100%;
+    font-size: 2rem;
+    padding: 0.5rem 1rem 0 1rem;
+    background: $beige;
+    margin-top: 1rem;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12) inset;
+    outline: 5px double  $beige;
+    img{
+      width: 2rem;
+      height: 2rem;
+      box-shadow: none;
+      outline: none;
+    }
+    &__row{
+      @include flexCenter();
+      flex-flow: row;
+      div{
+        width: 100px;
+        @include flexCenter();
+        flex-flow: column wrap;
+        padding: 0.5rem 0 0 0;
+      }
+    }
+  }
+  img{
+    width: 100%;
+    outline: 5px double $beige;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12) inset;
+  }
+}
+
+@keyframes flashPink {
+  0%{color: $black;}
+  50%{color: $pink;}
+}
+
+// @media (max-height:780px){
+//   #about{
+//     width: 100%;
+//     position: relative;
+//     height: auto;
+//     display: block;
+//     .flex-center{
+//       height: auto;
+//     }
+//   }
+// }
+
+@media (max-width:900px){
+  #about{
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (max-width:700px){
+  #about{
+    .grid-col-2{
+      display: block;
+    }
+    
+    .skills{
+      @include flexCenter();
+      width: 65%;
+      font-size: 1rem;
+      background: $beige;
+      margin: 1em auto;
+      img{
+        width: 1rem;
+        height: 1rem;
+      }
+      &__row{
+        flex-flow: row wrap;
+      }
+    }
+  }
+}
+
+@media (max-width:570px){
+  #about{
+    .skills{
+      width: 82%;
+    }
+  }
+}
+
+
+@media (max-width:465px){
+  #about{
+    .skills{
+      width: 100%;
+    }
+  }
+}

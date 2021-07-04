@@ -17,8 +17,6 @@ app.toggleNav = () => {
             app.menu.addClass('hamburgeranimX');
             app.navList.fadeIn();
             app.toggleHamburger = true; 
-            $('.hamburger').off('hover')
-            $('.hamburger').unbind('mouseenter mouseleave')
         };
     });
 };
@@ -30,53 +28,68 @@ app.handleNavPages = () => {
     const Contact = $('#contact');
     const logo = $('#logo-svg');
     
+    app.changePage = (page) => {
+        About.hide();
+        Projects.hide();
+        Contact.hide();
+        logo.hide();
+        page.fadeIn();
+        app.navList.fadeOut();
+        app.menu.removeClass('hamburgeranimX');
+        app.toggleHamburger = false;
+    }
+
     app.navList.children().on('click', function(){
         const text = $(this).text();
         if(text === 'About'){
-            About.fadeIn();
-            Projects.hide();
-            Contact.hide();
-            logo.hide();
-            app.navList.fadeOut();
-            app.menu.removeClass('hamburgeranimX');
-            app.toggleHamburger = false;
+            app.changePage(About);
         }else if(text === 'Contact'){
-            Contact.fadeIn();
-            About.hide();
-            Projects.hide();
-            logo.hide();
-            app.navList.fadeOut();
-            app.menu.removeClass('hamburgeranimX');
-            app.toggleHamburger = false;
+            app.changePage(Contact);
         }else{
-            Projects.fadeIn();
-            About.hide();
-            Contact.hide();
-            logo.hide();
-            app.navList.fadeOut();
-            app.menu.removeClass('hamburgeranimX');
-            app.toggleHamburger = false;
+            app.changePage(Projects);
         }
     })
-
 }
 
-app.threeScene = () => {
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+app.handleUserJourney = () => {
+    const step1 = $('.linkAbout');
+    const step2 = $('.linkProjects');
+    const step3 = $('.linkContact')
+    const About = $('#about');
+    const Projects = $('#projects');
+    const Contact = $('#contact');
+    const logo = $('#logo-svg');
 
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    step1.on('click', function(){
+        About.fadeIn();
+        Projects.hide();
+        Contact.hide();
+        logo.hide();
+    })
+
+    step2.on('click', function () {
+        About.hide();
+        Projects.fadeIn();
+        Contact.hide();
+        logo.hide();
+    })
+
+    step3.on('click', function () {
+        About.hide();
+        Projects.hide();
+        Contact.fadeIn();
+        logo.hide();
+    })
 }
 
 app.init = () => {
     $('.nav__list').css('display', 'none');
+    // app.nameChange();
     app.toggleNav();
     app.handleNavPages();
+    app.handleUserJourney();
 }
 //document.ready
 $(function(){
     app.init();
-    // app.threeScene();
 });

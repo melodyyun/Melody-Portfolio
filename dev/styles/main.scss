@@ -2,11 +2,16 @@
 @import 'utils';
 @import 'typography';
 @import 'general';
-@import 'components/nav';
-@import 'components/header';
-@import 'components/about';
-@import 'components/blog';
-@import 'components/contact';
-@import 'components/projects';
-@import 'components/socialMedia';
-@import 'components/footer';
+//sidebars
+@import 'components/sideBars/nav';
+@import 'components/sideBars/socialMedia';
+//pages
+@import 'components/pages/landing';
+@import 'components/pages/about';
+@import 'components/pages/contact';
+@import 'components/pages/projects';
+@import 'components/pages/thankYou';
+@import 'components/pages/aspen';
+//layout
+@import 'layout';
+
